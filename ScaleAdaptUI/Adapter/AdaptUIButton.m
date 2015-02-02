@@ -25,7 +25,7 @@
 }
 -(void)willMoveToSuperview:(UIView *)newSuperview{
     if (newSuperview) {
-        self.titleLabel.font  = [UIFont fontAdaptSize:self.titleLabel.font.lineHeight];
+        self.titleLabel.font  = [UIFont fontAdaptSize:self.titleLabel.font.pointSize];
          UIEdgeInsets edge = super.titleEdgeInsets;
         self.titleEdgeInsets = AdaptUIEdgeInsetsMake(edge.top, edge.left, edge.bottom, edge.right);
         

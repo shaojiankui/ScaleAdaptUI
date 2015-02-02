@@ -24,7 +24,7 @@
 }
 -(void)willMoveToSuperview:(UIView *)newSuperview{
     if (newSuperview) {
-        self.font  = [UIFont fontAdaptSize:self.font.lineHeight];
+        self.font  = [UIFont fontAdaptSize:self.font.pointSize];
     }
 }
 
